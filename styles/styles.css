@@ -1,6 +1,23 @@
+/*GENERAL STYLES */
 h1, 
 h2 {
     font-family: 'Caprasimo', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*ABOUT SECTION STYLES*/
+
+.about {
+    background-color: #eceae1;
 }
 
 .icons {
@@ -17,8 +34,15 @@ h2 {
     font-size: 50px;
 }
 
-.wrapper {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
+.color1 {
+    fill: #f3d6cc;
+}
+
+.color2 {
+    fill: #faece5;
+}
+
+.about wrapper {
+    display: flex;
+    flex-direction: column; 
 }
