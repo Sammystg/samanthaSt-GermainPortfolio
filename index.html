@@ -40,26 +40,31 @@
         <div class="wrapper">
             <h2>About me</h2>
             <p>Hello! My Name is Samantha St-Germain, I am a front end developer who recently completed a BootCamp at Juno College of Technology. I have a passion for creating and have experience working with JavaScript, React, CSS, and HTML. Prior to Tech and Juno College, I was an Office Administrator at a high school, and a skating coach. I love teaching people new skills they can carry with them through life. Throughout Bootcamp, I have collaborated with others, and completed many functional and responsive projects that showcase my many skills. I am looking to meet like minded people, and to bring my passion for creating pretty things to life in my everyday job. When I'm not improving my skills and working on projects, you can find me tending to my plants and pups, searching for new books, or getting some sun snowboarding the slopes.</p>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
-                <rect class="color1" x="0" y="0" width="50" height="50" />
-                <rect class="color2" x="50" y="0" width="50" height="50" />
-                <rect class="color1" x="100" y="0" width="50" height="50" />
-                <rect class="color2" x="150" y="0" width="50" height="50" />
-                <rect class="color1" x="200" y="0" width="50" height="50" />
-                <rect class="color2" x="250" y="0" width="50" height="50" />
-                <rect class="color1" x="300" y="0" width="50" height="50" />
-                <rect class="color2" x="350" y="0" width="50" height="50" />
-            
-                <rect class="color2" x="0" y="50" width="50" height="50" />
-                <rect class="color1" x="50" y="50" width="50" height="50" />
-                <rect class="color2" x="100" y="50" width="50" height="50" />
-                <rect class="color1" x="150" y="50" width="50" height="50" />
-                <rect class="color2" x="200" y="50" width="50" height="50" />
-                <rect class="color1" x="250" y="50" width="50" height="50" />
-                <rect class="color2" x="300" y="50" width="50" height="50" />
-                <rect class="color1" x="350" y="50" width="50" height="50" />
-            </svg>
+            <div class="checkerContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+                    <rect class="color1" x="0" y="0" width="50" height="50" />
+                    <rect class="color2" x="50" y="0" width="50" height="50" />
+                    <rect class="color1" x="100" y="0" width="50" height="50" />
+                    <rect class="color2" x="150" y="0" width="50" height="50" />
+                    <rect class="color1" x="200" y="0" width="50" height="50" />
+                    <rect class="color2" x="250" y="0" width="50" height="50" />
+                    <rect class="color1" x="300" y="0" width="50" height="50" />
+                    <rect class="color2" x="350" y="0" width="50" height="50" />
+                    <rect class="color1" x="400" y="0" width="50" height="50" />
+                    <rect class="color2" x="450" y="0" width="50" height="50" /> 
+                
+                    <rect class="color2" x="0" y="50" width="50" height="50" />
+                    <rect class="color1" x="50" y="50" width="50" height="50" />
+                    <rect class="color2" x="100" y="50" width="50" height="50" />
+                    <rect class="color1" x="150" y="50" width="50" height="50" />
+                    <rect class="color2" x="200" y="50" width="50" height="50" />
+                    <rect class="color1" x="250" y="50" width="50" height="50" />
+                    <rect class="color2" x="300" y="50" width="50" height="50" />
+                    <rect class="color1" x="350" y="50" width="50" height="50" />
+                    <rect class="color1" x="400" y="0" width="50" height="50" />
+                    <rect class="color2" x="450" y="0" width="50" height="50" /> 
+                </svg>
+            </div>
         </div>
     </section>
 
@@ -74,7 +79,7 @@
                 <div><i class="fa-brands fa-square-js"></i></div>
                 <div><i class="fa-brands fa-react"></i></div>
                 <div><i class="fa-brands fa-github"></i></div>
-                <div>firebase place holder</div>
+                <div>firebase</div>
                 <!-- ^find firebase icon somewhereeee -->
             </div>
         </div>
@@ -91,6 +96,22 @@
     <!-- CONTACT SECTION -->
     <section>
         <!-- have a form w/ my email as well as my socials linked (github, linkedin, ig) -->
+        <h2>Let's Connect</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
     </section>
 </main>
 <footer>
