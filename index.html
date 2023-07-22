@@ -19,9 +19,9 @@
         <nav>
             <div class="nav">
                 <ul>
-                    <li><a href="#about">about me</a></li>
+                    <li><a href="#aboutMe">about me</a></li>
                     <li><a href="#skills">skills</a></li>
-                    <li><a href="">contact me</a></li>
+                    <li><a href="#contactMe">contact me</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,10 +36,13 @@
 
 <main>
     <!-- ABOUT ME SECTION -->
-    <section class="about">
+    <section id="aboutMe">
         <div class="wrapper">
             <h2>About me</h2>
-            <p>Hello! My Name is Samantha St-Germain, I am a front end developer who recently completed a BootCamp at Juno College of Technology. I have a passion for creating and have experience working with JavaScript, React, CSS, and HTML. Prior to Tech and Juno College, I was an Office Administrator at a high school, and a skating coach. I love teaching people new skills they can carry with them through life. Throughout Bootcamp, I have collaborated with others, and completed many functional and responsive projects that showcase my many skills. I am looking to meet like minded people, and to bring my passion for creating pretty things to life in my everyday job. When I'm not improving my skills and working on projects, you can find me tending to my plants and pups, searching for new books, or getting some sun snowboarding the slopes.</p>
+            <div class="aboutContainer">
+                <p>Hello! My Name is Samantha St-Germain, I am a front end developer who recently completed a BootCamp at Juno College of Technology. I have a passion for creating and have experience working with JavaScript, React, CSS, and HTML. Prior to Tech and Juno College, I was an Office Administrator at a high school, and a skating coach. I love teaching people new skills they can carry with them through life. Throughout Bootcamp, I have collaborated with others, and completed many functional and responsive projects that showcase my many skills. I am looking to meet like minded people, and to bring my passion for creating pretty things to life in my everyday job. When I'm not improving my skills and working on projects, you can find me tending to my plants and pups, searching for new books, or getting some sun snowboarding the slopes.</p>
+                <img src="" alt="">
+            </div>
             <div class="checkerContainer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
                     <rect class="color1" x="0" y="0" width="50" height="50" />
@@ -69,7 +72,7 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section>
+    <section id="skills">
         <div class="wrapper">
             <h2>Skills</h2>
             <div class="icons">
@@ -94,24 +97,29 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section>
-        <!-- have a form w/ my email as well as my socials linked (github, linkedin, ig) -->
-        <h2>Let's Connect</h2>
-        <form action="/submit_form" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <br>
-
-            <input type="submit" value="Submit">
-        </form>
+    <section id="contactMe">
+        <div class="wrapper">
+            <h2>Let's Connect</h2>
+            <div class="formContainer">
+                <form action="/submit_form" method="post">
+                    <div class="inputContainer">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+            
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+            
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </section>
 </main>
 <footer>
