@@ -17,14 +17,30 @@ p {
     /* font-family: 'Montserrat', sans-serif; */
 }
 
-li {
+.nav li {
     list-style: none;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    
+}
+
+.nav li a {
+    text-decoration: none;
 }
 
 .wrapper {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+}
+
+/* HEADER STYLES */
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0;
 }
 
 
