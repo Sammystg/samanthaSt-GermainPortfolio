@@ -58,19 +58,30 @@ p {
 }
 
 .aboutContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+    display: flex;
     align-items: center;
+    max-width: 800px;
 }
 
 .aboutContainer img {
-    max-width: 100px;
+    max-width: 40%;
+    max-height: 400px;
+    /* margin: 0 auto */
+    margin-right: 40px;
 }
 
 .aboutContainer p {
     text-align: justify;
+    margin: 0;
+    flex: 1;
+    padding: 20px;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 
 .icons {
     display: flex;
@@ -95,7 +106,7 @@ p {
 }
 
 .checkerContainer {
-
+    padding-top: 30px;
 }
 
 
