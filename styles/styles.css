@@ -6,10 +6,14 @@
 /*  */
 
 /*GENERAL STYLES */
-h1, 
-h2 {
+h1 {
     font-family: 'Caprasimo', cursive;
     color: #383835;
+}
+
+h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 3.2rem;
 }
 
 p {
@@ -51,16 +55,16 @@ p {
     background-color: #fad9c9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
+    /* justify-content: center; */
 }
 
 .aboutContainer {
     display: flex;
     align-items: center;
-    max-width: 800px;
+    flex-direction: row;
 }
 
 .aboutContainer img {
@@ -68,18 +72,25 @@ p {
     max-height: 400px;
     /* margin: 0 auto */
     margin-right: 40px;
+    border-radius: 500px 500px 0 0;
+    box-shadow: 0 4PX 8PX RGBA(0,0,0,0.15);
 }
 
 .aboutContainer p {
     text-align: justify;
     margin: 0;
-    flex: 1;
+    /* flex: 1; */
     padding: 20px;
 }
 
 .container {
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    max-width: 800px;
+    flex-direction: column; */
+    text-align: left;
+    margin: 0;
+    padding: 20px;
 }
 
 
