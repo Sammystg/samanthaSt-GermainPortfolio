@@ -14,6 +14,8 @@ h1 {
 h2 {
     font-family: 'Caprasimo', cursive;
     font-size: 3.2rem;
+    padding-left: 150px;
+    margin: 0;
 }
 
 p {
@@ -32,11 +34,11 @@ p {
     text-decoration: none;
 }
 
-.wrapper {
+/* .wrapper {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-}
+} */
 
 /* HEADER STYLES */
 
@@ -49,48 +51,71 @@ p {
 
 
 
+
 /*ABOUT SECTION STYLES*/
+/* 
+.aboutWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+} */
 
 #aboutMe {
-    background-color: #fad9c9;
+    background-image: url(../assets/background/aboutBackground-01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     text-align: center;
-    /* justify-content: center; */
 }
 
 .aboutContainer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px;
     flex-direction: row;
 }
 
 .aboutContainer img {
     max-width: 40%;
     max-height: 400px;
-    /* margin: 0 auto */
-    margin-right: 40px;
+    /* /* margin-right: 40px; */
     border-radius: 500px 500px 0 0;
-    box-shadow: 0 4PX 8PX RGBA(0,0,0,0.15);
+    box-shadow: 0 4PX 8PX RGBA(0,0,0,0.15); 
 }
 
 .aboutContainer p {
     text-align: justify;
     margin: 0;
     /* flex: 1; */
-    padding: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 45px; */
 }
 
-.container {
-    /* display: flex;
+/* .container {
+    display: flex;
     justify-content: center;
     max-width: 800px;
-    flex-direction: column; */
-    text-align: left;
+    flex-direction: column;  
+    text-align: left; 
     margin: 0;
-    padding: 20px;
+    padding: 20px; 
+} */
+
+.container h2 {
+    text-align: left;
+    padding-top: 55px;
+    padding-left: 70px;
 }
 
 
@@ -117,7 +142,7 @@ p {
 }
 
 .checkerContainer {
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 
