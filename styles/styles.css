@@ -9,6 +9,7 @@
 h1 {
     font-family: 'Caprasimo', cursive;
     color: #383835;
+    font-size: 4.9rem;
 }
 
 h2 {
@@ -27,6 +28,7 @@ p {
     list-style: none;
     font-family: 'Quicksand';
     text-transform: uppercase;
+    margin-left: 20px;
     
 }
 
@@ -34,20 +36,45 @@ p {
     text-decoration: none;
 }
 
-/* .wrapper {
+.nav li:first-child {
+    margin-left: 0;
+}
+
+.wrapper {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-} */
+}
 
-/* HEADER STYLES */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    /* background-color if needed  */
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 
 .nav ul {
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     padding-left: 0;
+    margin-right: 20px;
 }
+
+
+/* HEADER STYLES */
+
 
 
 
