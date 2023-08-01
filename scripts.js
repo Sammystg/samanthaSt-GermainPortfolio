@@ -1,4 +1,4 @@
-const text = "a front end web developer";
+const text = "front end web developer";
 let charIndex = 0;
 const h3Element = document.getElementById("typewriter");
 
