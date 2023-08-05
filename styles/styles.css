@@ -59,14 +59,16 @@ p {
 
 .nav li {
     list-style: none;
-    font-family: 'Quicksand';
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    margin-left: 20px;
+    margin-left: 40px;
+    padding-right: 20px;
     
 }
 
 .nav li a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -83,9 +85,6 @@ p {
     z-index: 1000;
     width: 100%;
     display: flex;
-    /* justify-content: flex-end;
-    align-items: flex-end; */
-    /* background-color if needed  */
 }
 
 .fixed-navbar {
@@ -100,6 +99,7 @@ p {
     height: 80px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 50px 50px;
 }
 
 .nav ul {
@@ -141,28 +141,6 @@ p {
     box-shadow: 0 4PX 8PX RGBA(0,0,0,0.15); 
 }
 
-/* .headerContent h3 {
-    padding-left: 60px; 
-    color: #383835;
-    color: fbdac9;
-    font-family: 'Montserrat', sans-serif;
-} */
-
-
-
-
-/*ABOUT SECTION STYLES*/
-/* 
-.aboutWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-} */
-
 #aboutMe {
     background-image: url(../assets/background/aboutBackground-01-01.png);
     background-size: cover;
@@ -176,15 +154,13 @@ p {
 }
 
 .aboutContainer {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    /* max-width: 100%; */
     max-width: 800px;
     margin: 110px 20px 20px 20px;
-    /* flex-direction: row; */
 }
 
 .aboutWrapper {
@@ -213,28 +189,30 @@ p {
 }
 
 .paragraphWrapper h2 {
+    position: absolute;
+    top: 124px;
+    left: 185px;
+    transform: translate(-50, -50);
     font-family: 'Poppins', sans-serif;
     color: #383835;
     letter-spacing: -8px;
     font-weight: 600;
-    font-size: 4.9rem;
+    font-size: 5.9rem;
     padding-left: 60px; 
     padding-bottom: 40px;
-    /* margin-bottom: 6px; */
 } 
 
 .paragraphWrapper {
     flex: 1;
     padding-left: 30px;
+    margin-top: 150px;
 }
 
 .aboutContainer p {
     text-align: justify;
-    margin: 0;
-    /* flex: 1; */
+    margin: 66px 0 0;
     padding-left: 60px;
     line-height: 2;
-    /* padding-bottom: 45px; */
 }
 
 
