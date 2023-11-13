@@ -281,7 +281,7 @@ p {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     width: 50%;
     margin-bottom: 120px;
 }
@@ -296,11 +296,19 @@ p {
 }
 
 .skillsIcons li::after {
+    font-family: 'Poppins', sans-serif;
+    color: #383835;
+    font-size: 14px;
     content: attr(data-title);
     position: absolute;
-    bottom: -25px;
+    /* bottom: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(30%); */
+    bottom: 0;
+    left: 0;
+    /* right: 28px; */
+    width: calc(100% - 55px);
+    text-align: center;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
