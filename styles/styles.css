@@ -232,12 +232,6 @@ p {
     position: relative;
 }
 
-/* .skillsSection {
-    background-image: url(../assets/background/aboutBackground-01-01.png);
-    background-size: cover;
-    background-position: center;
-} */
-
 .skillsText h2 {
     color: #383835;
     text-align: center;
@@ -301,16 +295,26 @@ p {
     font-size: 14px;
     content: attr(data-title);
     position: absolute;
-    /* bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%) translateY(30%); */
     bottom: 0;
     left: 0;
-    /* right: 28px; */
     width: calc(100% - 55px);
     text-align: center;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+}
+
+.skillsIcons li.js::after,
+.skillsIcons li.responsive::after {
+    left: -14px;
+} 
+
+.skillsIcons li.sass::after {
+    left: -5px;
+}
+
+.skillsIcons li.html::after,
+.skillsIcons li.css::after {
+    left: -3px;
 }
 
 .skillsIcons li:hover {
