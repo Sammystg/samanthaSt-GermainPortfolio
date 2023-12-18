@@ -338,6 +338,14 @@ p {
     background-color: #fbeee8;
 }
 
+.projCol {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    column-gap: 4rem;
+    text-align: center;
+}
+
 /* .projectContainer {
     display: flex;
     flex-direction: row;
