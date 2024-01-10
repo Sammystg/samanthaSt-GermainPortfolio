@@ -346,6 +346,15 @@ p {
     text-align: center;
 }
 
+hr {
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    
+}
+
 /* .projectContainer {
     display: flex;
     flex-direction: row;
