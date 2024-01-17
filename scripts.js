@@ -51,7 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     h2Element.style.opacity = 1;
-                    observer.unobserve(entry.target);
+                    // observer.unobserve(entry.target);
+                } else {
+                    h2Element.style.opacity = 0;
                 }
             });
         }, options);
