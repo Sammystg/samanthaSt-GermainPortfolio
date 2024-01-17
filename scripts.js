@@ -39,20 +39,23 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     let h2Element = document.querySelector(".paragraphWrapper h2");
 
-    let options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5
-    };
+    if (h2Element) {
 
-    let observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                h2Element.style.opacity = 1;
-                observer.unobserve(entry.target);
-            }
-        });
-    }, options);
+        let options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5
+        };
 
-    observer.observe(h2Element);
+        let observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    h2Element.style.opacity = 1;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        observer.observe(h2Element);
+    }
 });
