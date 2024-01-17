@@ -146,6 +146,8 @@ p {
     box-shadow: 0 4PX 8PX RGBA(0,0,0,0.15); 
 }
 
+/* ABOUT ME STYLES */
+
 #aboutMe {
     background-image: url(../assets/background/aboutBackground-01-01.png);
     background-size: cover;
@@ -205,6 +207,8 @@ p {
     font-size: 5.9rem;
     padding-left: 60px; 
     padding-bottom: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 } 
 
 .paragraphWrapper {
@@ -352,6 +356,15 @@ hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+    
+}
+
+#projects, p {
+    text-align: justify;
+    line-height: 2;
+}
+
+.skillsTags {
     
 }
 

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         icon.addEventListener('mouseover', function () {
             const title = document.createElement('span');
             title.className = 'icon-title';
-            title.textConent = icon.getAttribute('data-title');
+            title.textContent = icon.getAttribute('data-title');
             icon.appendChild(title);
         });
 
@@ -32,4 +32,27 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+});
+
+// About Me Ease in 
+
+document.addEventListener("DOMContentLoaded", function () {
+    let h2Element = document.querySelector(".paragraphWrapper h2");
+
+    let options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5
+    };
+
+    let observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                h2Element.style.opacity = 1;
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    observer.observe(h2Element);
 });
